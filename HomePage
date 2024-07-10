@@ -38,13 +38,12 @@
 
       .fs-4 {
         color: #eae6e5;
+        margin-left: 10px;
       }
 
-      .header-pic {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+      .header-pic img {
+        max-width: 100px;
+        height: auto;
       }
 
       .nav-pills {
@@ -54,7 +53,66 @@
       .nav-link {
         font-size: 20px;
       }
+
+      .footer {
+        background-color: #f4e3ae;
+        color: #12130f;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
+      }
+
+      .footer .column {
+        flex: 1 1 200px;
+        margin: 10px;
+      }
+
+      .footer .column h3 {
+        margin-top: 0;
+      }
+
+      .footer .column ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .footer .column ul li {
+        margin: 10px 0;
+      }
+
+      .footer .column ul li a {
+        color: #12130f;
+        text-decoration: none;
+      }
+
+      .footer .column ul li a:hover {
+        text-decoration: underline;
+      }
     </style>
+
+    <script>
+      function confirmRedirect(event) {
+        const confirmed = confirm("Do you want to be redirected to this link?");
+        if (!confirmed) {
+          event.preventDefault();
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".footer a");
+        links.forEach(function (link) {
+          link.addEventListener("click", confirmRedirect);
+        });
+      });
+    </script>
   </head>
   <body>
     <section class="Header">
@@ -65,8 +123,7 @@
               <img
                 src="https://app.aranetacity.com/files/establishments/image/2137ac44-82d2-46f9-ac7e-45dec57ba2b7/Conti's.jpg"
                 alt="Conti's Logo"
-                width="auto"
-                height="100px"
+                class="img-fluid"
               />
             </a>
             <span class="fs-4">Conti's Bakeshop & Restaurant </span>
@@ -92,5 +149,71 @@
         </header>
       </div>
     </section>
+    <div class="footer">
+      <div class="container">
+        <div class="column">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="mailto: wecare@contis.ph">Email</a></li>
+            <li>Phone No.: 8580-8888</li>
+            <li>
+              <a
+                href=" https://www.facebook.com/contisph
+              "
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/contis_ph" target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Information</h3>
+          <ul>
+            <li>
+              <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');"
+                >Help Center</a
+              >
+            </li>
+            <li>
+              <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');"
+                >Terms and Conditions</a
+              >
+            </li>
+            <li>
+              <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Newsletter sign-up</h3>
+          <ul>
+            <form>
+              <div class="sign-up">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="EmailSignUp"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+            </form>
+          </ul>
+        </div>
+      </div>
+      <p>CONTI'S SPECIALTY FOODS, INC. (For Educational Purposes Only)</p>
+    </div>
   </body>
 </html>
