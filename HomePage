@@ -46,6 +46,11 @@
         position: relative;
       }
 
+      .Header-contents img {
+        max-width: 100px;
+        height: auto;
+      }
+
       .nav-link {
         color: #f4e3ae;
       }
@@ -118,19 +123,22 @@
 
       .Lower-Body {
         margin: 0;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding: 25px;
       }
 
       .LB-pics img {
-        width: 250px;
+        width: 350px;
         height: auto;
+        margin: 15px;
+        border-radius: 20px;
       }
     </style>
 
     <script>
       function confirmRedirect(event) {
-        const confirmed = confirm("Do you want to be redirected to this link?");
+        const confirmed = confirm(
+          "You will be redirected to another site, are you sure you want to leave?"
+        );
         if (!confirmed) {
           event.preventDefault();
         }
@@ -149,13 +157,11 @@
       <div class="container-fluid">
         <header class="py-3 mb-4 border-bottom">
           <div class="Header-contents">
-            <a href="#" class="header-pic text-white text-decoration-none">
-              <img
-                src="https://app.aranetacity.com/files/establishments/image/2137ac44-82d2-46f9-ac7e-45dec57ba2b7/Conti's.jpg"
-                alt="Conti's Logo"
-                class="img-fluid"
-              />
-            </a>
+            <img
+              src="https://app.aranetacity.com/files/establishments/image/2137ac44-82d2-46f9-ac7e-45dec57ba2b7/Conti's.jpg"
+              alt="Conti's Logo"
+              class="img-fluid"
+            />
             <span class="fs-4">Conti's Bakeshop & Restaurant </span>
             <ul class="nav nav-pills mt-3">
               <li class="nav-item">
@@ -202,7 +208,7 @@
               class="d-block w-100"
               src="https://www.contis.ph/cdn/shop/files/555.png?v=1694751289"
               alt="First slide"
-              style="width: auto; height: 800px; object-fit: cover"
+              style="width: auto; height: 700px; object-fit: cover"
             />
           </div>
           <div class="carousel-item">
@@ -210,7 +216,7 @@
               class="d-block w-100"
               src="https://www.taguigflowers.com/images/detailed/5/choco_overload_cake.jpg"
               alt="Second slide"
-              style="width: auto; height: 800px; object-fit: cover"
+              style="width: auto; height: 700px; object-fit: cover"
             />
           </div>
           <div class="carousel-item">
@@ -218,7 +224,7 @@
               class="d-block w-100"
               src="https://cdn.manilastandard.net/wp-content/uploads/2023/02/contis.jpg"
               alt="Third slide"
-              style="width: auto; height: 800px; object-fit: cover"
+              style="width: auto; height: 700px; object-fit: cover"
             />
           </div>
           <div class="carousel-item">
@@ -226,7 +232,7 @@
               class="d-block w-100"
               src="https://philippinesgraphic.com.ph/wp-content/uploads/2023/02/Contis_Photo_Contis-Celebrates-All-Kinds-of-Love_2023-scaled.jpg"
               alt="Fourth slide"
-              style="width: auto; height: 800px; object-fit: cover"
+              style="width: auto; height: 700px; object-fit: cover"
             />
           </div>
           <div class="carousel-item">
@@ -234,7 +240,7 @@
               class="d-block w-100"
               src="https://images.yummy.ph/yummy/uploads/2021/04/contis-limoncello-torte.jpg"
               alt="Fifth slide"
-              style="width: auto; height: 800px; object-fit: cover"
+              style="width: auto; height: 700px; object-fit: cover"
             />
           </div>
         </div>
@@ -265,6 +271,7 @@
             <div class="LB-pics">
               <img
                 src="https://www.contis.ph/cdn/shop/products/new-BlueberryCheesecake.jpg?v=1689558577"
+                class="img-fluid"
               />
             </div>
           </div>
@@ -272,6 +279,7 @@
             <div class="LB-pics">
               <img
                 src="https://www.contis.ph/cdn/shop/products/MangoBravo_1.jpg?v=1689558563"
+                class="img-fluid"
               />
             </div>
           </div>
@@ -279,6 +287,7 @@
             <div class="LB-pics">
               <img
                 src="https://www.contis.ph/cdn/shop/products/MoistChocolate.jpg?v=1689558556"
+                class="img-fluid"
               />
             </div>
           </div>
