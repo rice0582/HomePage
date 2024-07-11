@@ -216,6 +216,15 @@
         background-color: #348946;
         color: white;
       }
+
+      .column h3 {
+        font-weight: 900;
+      }
+
+      .footer p {
+        font-weight: 900;
+        font-size: 15px;
+      }
     </style>
 
     <script>
@@ -252,13 +261,13 @@
                 <a href="Index.html" class="nav-link">HOME</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">SERVICES</a>
+                <a href="Menu.html" class="nav-link">MENU</a>
               </li>
               <li class="nav-item">
                 <a href="About Us.html" class="nav-link">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a href="Menu.html" class="nav-link">MENU</a>
+                <a href="Services.html" class="nav-link">SERVICES</a>
               </li>
             </ul>
           </div>
@@ -346,7 +355,7 @@
     </section>
     <section class="Lower-Body">
       <div class="container text-center">
-        <div class="LB-Title">Sample Menu</div>
+        <div class="LB-Title">BEST SELLER</div>
         <div class="favorites-container">
           <div class="favorite-item">
             <img
@@ -468,7 +477,8 @@
             </ul>
           </div>
         </div>
-        <p>CONTI'S SPECIALTY FOODS, INC. (For Educational Purposes Only)</p>
+        <p>CONTI'S SPECIALTY FOODS, INC.</p>
+        <p>(For Educational Purposes Only)</p>
       </div>
     </section>
   </body>
