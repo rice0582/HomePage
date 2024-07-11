@@ -122,7 +122,9 @@
       }
 
       .Lower-Body {
-        margin: 0;
+        background-color: #ffffe0;
+        margin-bottom: 25px;
+        margin-top: 25px;
         padding: 25px;
       }
 
@@ -131,6 +133,78 @@
         height: auto;
         margin: 15px;
         border-radius: 20px;
+      }
+
+      .LB-Title {
+        font-size: 35px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .favorites-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      .favorite-item {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 30%;
+        max-width: 300px;
+        min-width: 200px;
+        margin: 20px 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .favorite-item a {
+        background-color: white;
+        border: none;
+        width: 90%;
+        margin-top: auto;
+        margin-bottom: 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .favorite-item img {
+        width: 125px;
+        height: 125px;
+        display: block;
+        margin: 10px auto;
+        object-fit: cover;
+      }
+      .favorite-item h3 {
+        width: 90%;
+        font-size: 1.2em;
+        margin: 10px 0;
+        text-align: center;
+      }
+      .favorite-item p,
+      .favorite-item .description {
+        width: 90%;
+        font-size: 0.9em;
+        margin: 10px 0;
+        text-align: center;
+      }
+      .favorite-item .description {
+        font-family: "Times New Roman", Times, serif;
+      }
+      .favorite-item button {
+        background-color: #ffd700;
+        border: none;
+        padding: 10px;
+        font-size: 1em;
+        cursor: pointer;
+        width: 90%;
+        margin-top: auto; /* Ensure button stays at the bottom */
+        margin-bottom: 20px;
       }
     </style>
 
@@ -165,20 +239,16 @@
             <span class="fs-4">Conti's Bakeshop & Restaurant </span>
             <ul class="nav nav-pills mt-3">
               <li class="nav-item">
-                <a href="http://127.0.0.1:3002/index.html" class="nav-link"
-                  >Home</a
-                >
+                <a href="Index.html" class="nav-link">Home</a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Services</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">About us</a>
+                <a href="About Us.html" class="nav-link">About us</a>
               </li>
               <li class="nav-item">
-                <a href="http://127.0.0.1:3002/WEB.html" class="nav-link"
-                  >Menu</a
-                >
+                <a href="Menu.html" class="nav-link">Menu</a>
               </li>
             </ul>
           </div>
@@ -208,7 +278,7 @@
               class="d-block w-100"
               src="https://www.contis.ph/cdn/shop/files/555.png?v=1694751289"
               alt="First slide"
-              style="width: auto; height: 700px; object-fit: cover"
+              style="width: auto; height: 600px; object-fit: cover"
             />
           </div>
           <div class="carousel-item">
@@ -216,7 +286,7 @@
               class="d-block w-100"
               src="https://www.taguigflowers.com/images/detailed/5/choco_overload_cake.jpg"
               alt="Second slide"
-              style="width: auto; height: 700px; object-fit: cover"
+              style="width: auto; height: 600px; object-fit: cover"
             />
           </div>
           <div class="carousel-item">
@@ -224,7 +294,7 @@
               class="d-block w-100"
               src="https://cdn.manilastandard.net/wp-content/uploads/2023/02/contis.jpg"
               alt="Third slide"
-              style="width: auto; height: 700px; object-fit: cover"
+              style="width: auto; height: 600px; object-fit: cover"
             />
           </div>
           <div class="carousel-item">
@@ -232,7 +302,7 @@
               class="d-block w-100"
               src="https://philippinesgraphic.com.ph/wp-content/uploads/2023/02/Contis_Photo_Contis-Celebrates-All-Kinds-of-Love_2023-scaled.jpg"
               alt="Fourth slide"
-              style="width: auto; height: 700px; object-fit: cover"
+              style="width: auto; height: 600px; object-fit: cover"
             />
           </div>
           <div class="carousel-item">
@@ -240,7 +310,7 @@
               class="d-block w-100"
               src="https://images.yummy.ph/yummy/uploads/2021/04/contis-limoncello-torte.jpg"
               alt="Fifth slide"
-              style="width: auto; height: 700px; object-fit: cover"
+              style="width: auto; height: 600px; object-fit: cover"
             />
           </div>
         </div>
@@ -266,30 +336,53 @@
     </section>
     <section class="Lower-Body">
       <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="column">
-            <div class="LB-pics">
-              <img
-                src="https://www.contis.ph/cdn/shop/products/new-BlueberryCheesecake.jpg?v=1689558577"
-                class="img-fluid"
-              />
-            </div>
+        <div class="LB-Title">Sample Menu</div>
+        <div class="favorites-container">
+          <div class="favorite-item">
+            <img
+              src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8tPeNb1GWVNIa2oq4p8BPQPADyrlbBrPAQmCfmwpsBF7xiPyr"
+              alt="Conti's Tiramisu"
+            />
+            <h3>CONTI'S TIRAMISU</h3>
+            <p>₱885.00</p>
+            <p class="description">
+              Luscious layers of sponge cake and silky vanilla mousse dabbed
+              with coffee & wine, finished off with cocoa powder
+            </p>
+            <a href="Menu.html">
+              <button>Add to Cart</button>
+            </a>
           </div>
-          <div class="column">
-            <div class="LB-pics">
-              <img
-                src="https://www.contis.ph/cdn/shop/products/MangoBravo_1.jpg?v=1689558563"
-                class="img-fluid"
-              />
-            </div>
+          <div class="favorite-item">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXcJP033bJnI40VjbJmsPAgQHZc66fLdyGZO3zlzon7duVyOWx"
+              alt="Mango Bravo"
+            />
+            <h3>MANGO BRAVO</h3>
+            <p>₱315.00 – ₱1,645.00</p>
+            <p class="description">
+              Layers of crunchy wafers filled with chocolate mousse, cream and
+              mango cubes
+            </p>
+            <a href="Menu.html">
+              <button>Add to Cart</button>
+            </a>
           </div>
-          <div class="column">
-            <div class="LB-pics">
-              <img
-                src="https://www.contis.ph/cdn/shop/products/MoistChocolate.jpg?v=1689558556"
-                class="img-fluid"
-              />
-            </div>
+          <div class="favorite-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKJt87ISF33mlSF3L4lTHE-rrqzW7Gw5WvSCd9gSE5MCXP46QL"
+              alt="Crema de Fruta"
+            />
+            <h3>CREMA DE FRUTA</h3>
+            <p>₱1,195.00</p>
+            <p class="description">
+              A flowerfetti soft naked cake made with light and airy sponge cake
+              & dreamy lemon crème with real fruits, topped with lychee flavored
+              gelée.
+            </p>
+            <a href="Menu.html">
+              <button>Add to Cart</button>
+            </a>
           </div>
         </div>
       </div>
