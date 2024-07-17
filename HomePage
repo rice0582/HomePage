@@ -207,7 +207,7 @@
         font-size: 1em;
         cursor: pointer;
         width: 90%;
-        margin-top: auto; /* Ensure button stays at the bottom */
+        margin-top: auto; 
         margin-bottom: 20px;
       }
 
