@@ -207,7 +207,7 @@
         font-size: 1em;
         cursor: pointer;
         width: 90%;
-        margin-top: auto; 
+        margin-top: auto;
         margin-bottom: 20px;
       }
 
@@ -255,19 +255,19 @@
               alt="Conti's Logo"
               class="img-fluid"
             />
-            <span class="fs-4">Conti's Bakeshop & Restaurant </span>
+            <span class="fs-4">CONTI'S BAKESHOP & RESTAURANT </span>
             <ul class="nav nav-pills mt-3">
               <li class="nav-item">
-                <a href="Index.html" class="nav-link">HOME</a>
+                <a href="index.html" class="nav-link">HOME</a>
               </li>
               <li class="nav-item">
-                <a href="Menu.html" class="nav-link">MENU</a>
+                <a href="menu.html" class="nav-link">MENU</a>
               </li>
               <li class="nav-item">
-                <a href="About Us.html" class="nav-link">ABOUT US</a>
+                <a href="about us.html" class="nav-link">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a href="Services.html" class="nav-link">SERVICES</a>
+                <a href="services.html" class="nav-link">SERVICES</a>
               </li>
             </ul>
           </div>
@@ -418,19 +418,21 @@
           <div class="column">
             <h3>Contact Us</h3>
             <ul>
-              <li><a href="mailto: wecare@contis.ph">Email</a></li>
+              <li>
+                <a href="mailto: wecare@contis.ph">Email: wecare@contis.ph</a>
+              </li>
               <li>Phone No.: 8580-8888</li>
               <li>
                 <a
                   href=" https://www.facebook.com/contisph
-              "
+                "
                   target="_blank"
-                  >Facebook</a
-                >
+                  >Facebook: Conti's Bakeshop & Restaurant
+                </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/contis_ph" target="_blank"
-                  >Instagram</a
+                  >Instagram: Conti's Bakeshop & Restaurant</a
                 >
               </li>
             </ul>
